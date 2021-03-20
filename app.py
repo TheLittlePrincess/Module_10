@@ -16,7 +16,9 @@ def index():
    return render_template("index.html", mars=mars)
 # set up our scraping route. the "button" of the web application that 
 # will scrape updated data when we tell it to from the homepage of 
-# the web app. It'll be tied to a button that will run the code when clicked. 
+# the web app. It'll be tied to a button that will run the code when clicked
+# Note early in the module the ipynb and py export were named Mission_to_Mars
+# that is the same file refer as scraping here (change the .py file name)
 @app.route("/scrape")
 def scrape():
    mars = mongo.db.mars
